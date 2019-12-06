@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+main > *,
+footer {
+    width: 100%;
+    min-height: 10px;
+}
+
+main > *:nth-child(even) {
+    background-color: lightgrey;
+}
+
+/* Navbar */
+
+nav {
+    height: 190px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 100%;
+    border: 1px solid lightgrey;
+}
+
+nav ul li > * {
+    margin: 5px auto;
+}
+
+.nav-img {
+    width: 50px;
+    height: 50px;
+    background-color: darkgray;
+    margin-top: 35px;
+}
+
+.nav-title {
+    width: 40px;
+    height: 1.5em;
+    background-color: black;
+}
+
+.nav-subtitle {
+    width: 90px;
+    height: 1em;
+    background-color: lightgrey;
+}
+
+.logo {
+    flex-grow: 2;
+    margin: 20px;
+    background-color: darkgray;
+}
+
+.topics {
+    background-color: darkgray;
+    height: 1.5em;
+    margin: auto 20px;
+}
+
+footer {
+    background-color: lightgrey;
+}
+
+/* Latest articles */
