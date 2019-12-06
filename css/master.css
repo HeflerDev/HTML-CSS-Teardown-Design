@@ -6,10 +6,7 @@ main > *,
 footer {
     width: 100%;
     min-height: 10px;
-}
-
-main > *:nth-child(even) {
-    background-color: lightgrey;
+    border: 1px solid lightgrey;
 }
 
 /* Navbar */
@@ -73,3 +70,26 @@ footer {
 }
 
 /* Latest articles */
+
+section {
+    padding: 20px 0;
+}
+
+.section-title {
+    height: 2.5em;
+    width: 120px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.latest-articles article {
+    width: 50%;
+    height: 400px;
+    background-color: lightgrey;
+    border: 1px solid darkgray;
+}
