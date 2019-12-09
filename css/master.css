@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  border: solid red 1px;
+  /* border: solid red 1px; */
 }
 
 main > * {
@@ -64,10 +64,6 @@ nav ul li > * {
   background-color: darkgray;
   height: 1.5em;
   margin: auto 20px;
-}
-
-footer {
-  background-color: lightgrey;
 }
 
 /* Latest articles */
@@ -256,18 +252,28 @@ section {
 .featured-articles .guides {
   width: 15%;
   height: 10%;
+  margin: 10px;
+  background-color: lightgray;
 }
 
 .featured-articles .list-title {
   width: 80%;
   height: 20%;
-  margin: auto;
+  margin: 10px auto;
+  background-color: rgb(87, 87, 87);
 }
 
 .featured-articles .list {
-  width: 90%;
+  width: 70%;
   height: 70%;
   margin: auto;
+  background: repeating-linear-gradient(
+    to bottom,
+    darkgray,
+    darkgray 1em,
+    white 1em,
+    white 2em
+  );
 }
 
 .featured-articles .time {
@@ -294,7 +300,6 @@ section {
   display: flex;
   width: 100%;
   height: 10vw;
-  border: solid blue 1px;
 }
 
 .view-more div {
@@ -352,6 +357,60 @@ section {
   height: 40%;
   margin: auto;
   background-color: rgb(56, 56, 56);
+}
+
+.mega-ad-second {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mega-ad-second .content {
+  width: 60%;
+  height: 90%;
+}
+
+.mega-ad-second .content .featured-text {
+  width: 20%;
+  height: 10%;
+  margin: 10px;
+  background-color: gray;
+}
+
+.mega-ad-second .content .title {
+  width: 40%;
+  height: 20%;
+  margin: 10px;
+  background-color: rgb(56, 56, 56);
+}
+
+.mega-ad-second .content .text {
+  width: 60%;
+  height: 40%;
+  margin: 10px;
+  background: repeating-linear-gradient(
+    to bottom,
+    darkgray,
+    darkgray 1em,
+    white 1em,
+    white 2em
+  );
+}
+
+.mega-ad-second .content .button {
+  width: 30%;
+  height: 30%;
+  margin: 10px;
+  background: rgb(56, 56, 56);
+}
+
+.mega-ad-second .pic {
+  width: 40%;
+  height: 100%;
+  margin: 10px;
+  background-color: gray;
 }
 
 .people-section {
@@ -462,19 +521,28 @@ footer {
 footer .title {
   width: 30%;
   height: 20%;
-  margin: auto;
+  margin: 10px auto;
+  background-color: gray;
 }
 
 footer .links {
   width: 70%;
   height: 30%;
-  margin: auto;
+  margin: 10px auto;
+  background: repeating-linear-gradient(
+    to bottom,
+    darkgray,
+    darkgray 1em,
+    white 1em,
+    white 2em
+  );
 }
 
 footer .commentary {
   width: 30%;
   height: 20%;
-  margin: auto;
+  margin: 10px auto;
+  background-color: rgb(220, 220, 220);
 }
 
 footer .content {
@@ -487,15 +555,19 @@ footer .content {
 
 footer .content .bird-cage {
   width: 20%;
-  height: 100%;
+  margin: 10px;
+  background-color: lightgray;
 }
 
 footer .content .links {
   width: 60%;
-  height: 100%;
+  height: 80%;
+  margin: auto 10px;
+  background-color: lightgray;
 }
 
 footer .content .cat {
   width: 20%;
-  height: 100%;
+  margin: 10px;
+  background-color: lightgray;
 }
