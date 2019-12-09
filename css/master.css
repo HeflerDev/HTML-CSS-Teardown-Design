@@ -1,6 +1,5 @@
 * {
   box-sizing: border-box;
-  /* border: solid red 1px; */
 }
 
 main > * {
@@ -156,9 +155,24 @@ section {
 
 /* FEATURED ARTICLES SECTION START */
 
+footer .content {
+  display: flex;
+  height: 40%;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
 .featured-articles {
   width: 100%;
   height: 1000px;
+}
+
+footer .title {
+  width: 30%;
+  height: 20%;
+  margin: 10px auto;
+  background-color: gray;
 }
 
 .featured-articles article {
@@ -178,9 +192,21 @@ section {
   background-color: lightgrey;
 }
 
+.mega-ad .title {
+  width: 50%;
+  height: 20%;
+  margin: auto;
+  background-color: rgb(56, 56, 56);
+}
+
 .featured-articles article .title {
   width: 80%;
   height: 30%;
+}
+
+.featured-articles .author {
+  background-color: darkgrey;
+  margin: 5px 0;
 }
 
 .featured-articles article .author {
@@ -188,9 +214,54 @@ section {
   height: 1em;
 }
 
+.mega-ad .content {
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+.featured-articles .content {
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+.people-section .content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mega-ad-second .content {
+  width: 60%;
+  height: 90%;
+}
+
 .featured-articles article .content {
   width: 90%;
   height: 50%;
+}
+
+.mega-ad .button {
+  width: 25%;
+  height: 15%;
+  margin: auto;
+  background-color: darkgray;
 }
 
 .featured-articles .smashing-members {
@@ -224,13 +295,14 @@ section {
   width: 70%;
   height: 20%;
   margin: 0 auto;
-  background: repeating-linear-gradient(
-    to bottom,
-    lightgray,
-    lightgray 1em,
-    white 1em,
-    white 2em
-  );
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      lightgray,
+      lightgray 1em,
+      white 1em,
+      white 2em
+    );
 }
 
 .featured-articles .smashing-members .button,
@@ -267,31 +339,14 @@ section {
   width: 70%;
   height: 70%;
   margin: auto;
-  background: repeating-linear-gradient(
-    to bottom,
-    darkgray,
-    darkgray 1em,
-    white 1em,
-    white 2em
-  );
-}
-
-.featured-articles .time {
-}
-
-.featured-articles .author {
-  background-color: darkgrey;
-  margin: 5px 0;
-}
-
-.featured-articles .content {
-  background: repeating-linear-gradient(
-    to bottom,
-    darkgray,
-    darkgray 1em,
-    white 1em,
-    white 2em
-  );
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
 }
 
 /* FEATURED ARTICLES SECTION END */
@@ -325,33 +380,6 @@ section {
   background-color: lightgray;
 }
 
-.mega-ad .title {
-  width: 50%;
-  height: 20%;
-  margin: auto;
-  background-color: rgb(56, 56, 56);
-}
-
-.mega-ad .content {
-  width: 50%;
-  height: 30%;
-  margin: auto;
-  background: repeating-linear-gradient(
-    to bottom,
-    darkgray,
-    darkgray 1em,
-    white 1em,
-    white 2em
-  );
-}
-
-.mega-ad .button {
-  width: 25%;
-  height: 15%;
-  margin: auto;
-  background-color: darkgray;
-}
-
 .mega-ad .pic {
   width: 90%;
   height: 40%;
@@ -365,11 +393,6 @@ section {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.mega-ad-second .content {
-  width: 60%;
-  height: 90%;
 }
 
 .mega-ad-second .content .featured-text {
@@ -390,13 +413,14 @@ section {
   width: 60%;
   height: 40%;
   margin: 10px;
-  background: repeating-linear-gradient(
-    to bottom,
-    darkgray,
-    darkgray 1em,
-    white 1em,
-    white 2em
-  );
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
 }
 
 .mega-ad-second .content .button {
@@ -434,14 +458,6 @@ section {
   margin: 10px;
 }
 
-.people-section .content {
-  width: 80%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
 .people-section .content .author {
   width: 70%;
   height: 20%;
@@ -460,13 +476,14 @@ section {
   width: 80%;
   height: 60%;
   margin: 10px;
-  background: repeating-linear-gradient(
-    to bottom,
-    darkgray,
-    darkgray 1em,
-    white 1em,
-    white 2em
-  );
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
 }
 
 .people-section .person-of-the-week {
@@ -501,13 +518,14 @@ section {
 .person-of-the-week .content .text {
   width: 85%;
   height: 60%;
-  background: repeating-linear-gradient(
-    to bottom,
-    darkgray,
-    darkgray 1em,
-    white 1em,
-    white 2em
-  );
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
 }
 
 footer {
@@ -518,24 +536,18 @@ footer {
   width: 100%;
 }
 
-footer .title {
-  width: 30%;
-  height: 20%;
-  margin: 10px auto;
-  background-color: gray;
-}
-
 footer .links {
   width: 70%;
   height: 30%;
   margin: 10px auto;
-  background: repeating-linear-gradient(
-    to bottom,
-    darkgray,
-    darkgray 1em,
-    white 1em,
-    white 2em
-  );
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
 }
 
 footer .commentary {
@@ -543,14 +555,6 @@ footer .commentary {
   height: 20%;
   margin: 10px auto;
   background-color: rgb(220, 220, 220);
-}
-
-footer .content {
-  display: flex;
-  height: 40%;
-  width: 100%;
-  justify-content: space-around;
-  flex-direction: row;
 }
 
 footer .content .bird-cage {
