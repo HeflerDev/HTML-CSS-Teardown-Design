@@ -3,8 +3,7 @@
   border: solid red 1px;
 }
 
-main > *,
-footer {
+main > * {
   display: block;
   width: 100%;
   min-height: 10px;
@@ -324,5 +323,50 @@ section {
 }
 
 footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 600px;
+  width: 100%;
+}
+
+footer .title {
+  width: 30%;
+  height: 20%;
+  margin: auto;
+}
+
+footer .links {
+  width: 70%;
+  height: 30%;
+  margin: auto;
+}
+
+footer .commentary {
+  width: 30%;
+  height: 20%;
+  margin: auto;
+}
+
+footer .content {
+  display: flex;
+  height: 40%;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+footer .content .bird-cage {
+  width: 20%;
+  height: 100%;
+}
+
+footer .content .links {
+  width: 60%;
+  height: 100%;
+}
+
+footer .content .cat {
+  width: 20%;
+  height: 100%;
 }
