@@ -185,7 +185,7 @@ footer .title {
   padding: 1%;
 }
 
-.featured-articles article time {
+.featured-articles article .time {
   width: 40%;
   height: 1em;
   margin: 5px 0;
