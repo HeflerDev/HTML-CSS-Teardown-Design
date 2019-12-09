@@ -96,24 +96,106 @@ section {
   border: 1px solid darkgray;
 }
 
+/* FEATURED ARTICLES SECTION START */
+
 .featured-articles {
   width: 100%;
   height: 1000px;
 }
 
 .featured-articles article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   height: 50%;
   width: 33.3333%;
   float: left;
+  padding: 1%;
+}
+
+.featured-articles article time {
+  width: 40%;
+  height: 10%;
+}
+
+.featured-articles article .title {
+  width: 80%;
+  height: 30%;
+}
+
+.featured-articles article .author {
+  width: 30%;
+  height: 10%;
+}
+
+.featured-articles article .content {
+  width: 90%;
+  height: 50%;
 }
 
 .featured-articles .smashing-members {
   width: 66.66666%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .featured-articles .smashing-tv {
   width: 100%;
 }
+
+.featured-articles .smashing-members .logo,
+.featured-articles .smashing-tv .logo {
+  width: 20%;
+  height: 20%;
+  margin: auto;
+}
+
+.featured-articles .smashing-members .title,
+.featured-articles .smashing-tv .title {
+  width: 70%;
+  height: 15%;
+  margin: auto;
+}
+
+.featured-articles .smashing-members .content,
+.featured-articles .smashing-tv .content {
+  width: 70%;
+  height: 20%;
+  margin: auto;
+}
+
+.featured-articles .smashing-members .button,
+.featured-articles .smashing-tv .button {
+  width: 20%;
+  height: 20%;
+  margin: auto;
+}
+
+.featured-articles .smashing-members .sign-in,
+.featured-articles .smashing-tv .sign-in {
+  width: 30%;
+  height: 20%;
+  margin: auto;
+}
+
+.featured-articles .guides {
+  width: 15%;
+  height: 10%;
+}
+
+.featured-articles .list-title {
+  width: 80%;
+  height: 20%;
+  margin: auto;
+}
+
+.featured-articles .list {
+  width: 90%;
+  height: 70%;
+  margin: auto;
+}
+/* FEATURED ARTICLES SECTION END */
 
 .view-more {
   display: flex;
@@ -131,6 +213,40 @@ section {
 .mega-ad {
   width: 100%;
   height: 30vw;
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.mega-ad .time {
+  width: 30%;
+  height: 10%;
+  margin: auto;
+}
+
+.mega-ad .title {
+  width: 50%;
+  height: 20%;
+  margin: auto;
+}
+
+.mega-ad .content {
+  width: 30%;
+  height: 15%;
+  margin: auto;
+}
+
+.mega-ad .button {
+  width: 25%;
+  height: 15%;
+  margin: auto;
+}
+
+.mega-ad .pic {
+  width: 90%;
+  height: 40%;
+  margin: auto;
 }
 
 .people-section {
@@ -140,12 +256,71 @@ section {
 
 .people-section article {
   float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   height: 25%;
   width: 50%;
 }
 
+.people-section .pic {
+  width: 20%;
+  height: 20%;
+}
+
+.people-section .content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.people-section .content .author {
+  width: 70%;
+  height: 20%;
+}
+
+.people-section .content .title {
+  width: 60%;
+  height: 20%;
+}
+
+.people-section .content .text {
+  width: 80%;
+  height: 60%;
+}
+
 .people-section .person-of-the-week {
   width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.people-section .person-of-the-week .pic {
+  width: 25%;
+  height: 80%;
+  margin: auto;
+}
+
+.people-section .person-of-the-week .content {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.person-of-the-week .content .title {
+  width: 25%;
+  height: 20%;
+}
+
+.person-of-the-week .content .text {
+  width: 85%;
+  height: 60%;
 }
 
 footer {
