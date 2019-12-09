@@ -185,6 +185,13 @@ footer .title {
   padding: 1%;
 }
 
+.mega-ad .time {
+  width: 30%;
+  height: 10%;
+  margin: auto;
+  background-color: lightgray;
+}
+
 .featured-articles article .time {
   width: 40%;
   height: 1em;
@@ -371,13 +378,6 @@ footer .title {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-}
-
-.mega-ad .time {
-  width: 30%;
-  height: 10%;
-  margin: auto;
-  background-color: lightgray;
 }
 
 .mega-ad .pic {
