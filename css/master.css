@@ -1,0 +1,577 @@
+* {
+  box-sizing: border-box;
+}
+
+main > * {
+  display: block;
+  width: 100%;
+  min-height: 10px;
+  border: 1px solid lightgrey;
+}
+
+/* Navbar */
+
+nav {
+  height: 190px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+}
+
+nav ul li {
+  display: inline-block;
+  width: 100%;
+  border: 1px solid lightgrey;
+}
+
+nav ul li > * {
+  margin: 5px auto;
+}
+
+.nav-img {
+  width: 50px;
+  height: 50px;
+  background-color: darkgray;
+  margin-top: 35px;
+}
+
+.nav-title {
+  width: 40px;
+  height: 1.5em;
+  background-color: rgb(56, 56, 56);
+}
+
+.nav-subtitle {
+  width: 90px;
+  height: 1em;
+  background-color: lightgrey;
+}
+
+.logo {
+  flex-grow: 2;
+  margin: 20px;
+  background-color: darkgray;
+}
+
+.topics {
+  background-color: darkgray;
+  height: 1.5em;
+  margin: auto 20px;
+}
+
+/* Latest articles */
+
+section {
+  padding: 20px 0;
+}
+
+.section-title {
+  height: 2.5em;
+  width: 120px;
+  background-color: rgb(56, 56, 56);
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.latest-articles article {
+  width: 50%;
+  background-color: white;
+  border: 1px solid darkgray;
+  padding: 30px;
+}
+
+.author-img {
+  background-color: lightgrey;
+  width: 85px;
+  height: 85px;
+  margin-top: 40px;
+  float: left;
+}
+
+.latest-articles .author {
+  background-color: darkgray;
+  height: 1.5em;
+  width: 170px;
+  display: inline-block;
+  position: relative;
+  top: 70px;
+}
+
+.multiline-title {
+  clear: left;
+}
+
+.line1 {
+  width: 60%;
+  height: 2.5em;
+  background-color: rgb(56, 56, 56);
+  margin: 1px 0;
+}
+
+.line2 {
+  width: 50%;
+  height: 2.5em;
+  background-color: rgb(56, 56, 56);
+  margin: 1px 0;
+}
+
+.line3 {
+  width: 70%;
+  height: 2.5em;
+  background-color: rgb(56, 56, 56);
+  margin: 1px 0;
+}
+
+.line4 {
+  width: 30%;
+  height: 2.5em;
+  background-color: rgb(56, 56, 56);
+  margin: 1px 0;
+}
+
+.tags ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags ul li {
+  display: block;
+  width: 170px;
+  background-color: lightgrey;
+  height: 1em;
+  margin: 1px;
+}
+
+/* FEATURED ARTICLES SECTION START */
+
+footer .content {
+  display: flex;
+  height: 40%;
+  width: 100%;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.featured-articles {
+  width: 100%;
+  height: 1000px;
+}
+
+footer .title {
+  width: 30%;
+  height: 20%;
+  margin: 10px auto;
+  background-color: gray;
+}
+
+.featured-articles article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 50%;
+  width: 33.3333%;
+  float: left;
+  padding: 1%;
+}
+
+.mega-ad .time {
+  width: 30%;
+  height: 10%;
+  margin: auto;
+  background-color: lightgray;
+}
+
+.featured-articles article .time {
+  width: 40%;
+  height: 1em;
+  margin: 5px 0;
+  background-color: lightgrey;
+}
+
+.mega-ad .title {
+  width: 50%;
+  height: 20%;
+  margin: auto;
+  background-color: rgb(56, 56, 56);
+}
+
+.featured-articles article .title {
+  width: 80%;
+  height: 30%;
+}
+
+.featured-articles .author {
+  background-color: darkgrey;
+  margin: 5px 0;
+}
+
+.featured-articles article .author {
+  width: 30%;
+  height: 1em;
+}
+
+.mega-ad .content {
+  width: 50%;
+  height: 30%;
+  margin: auto;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+.featured-articles .content {
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+.people-section .content {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.mega-ad-second .content {
+  width: 60%;
+  height: 90%;
+}
+
+.featured-articles article .content {
+  width: 90%;
+  height: 50%;
+}
+
+.mega-ad .button {
+  width: 25%;
+  height: 15%;
+  margin: auto;
+  background-color: darkgray;
+}
+
+.featured-articles .smashing-members {
+  width: 66.66666%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.featured-articles .smashing-tv {
+  width: 100%;
+}
+
+.featured-articles .smashing-members .logo,
+.featured-articles .smashing-tv .logo {
+  width: 35%;
+  max-height: 160px;
+  margin: auto;
+}
+
+.featured-articles .smashing-members .title,
+.featured-articles .smashing-tv .title {
+  width: 70%;
+  height: 2.5em;
+  background-color: rgb(56, 56, 56);
+  margin: 5px auto;
+}
+
+.featured-articles .smashing-members .content,
+.featured-articles .smashing-tv .content {
+  width: 70%;
+  height: 20%;
+  margin: 0 auto;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      lightgray,
+      lightgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+.featured-articles .smashing-members .button,
+.featured-articles .smashing-tv .button {
+  width: 150px;
+  height: 1.5em;
+  margin: 5px auto;
+  background-color: darkgrey;
+}
+
+.featured-articles .smashing-members .sign-in,
+.featured-articles .smashing-tv .sign-in {
+  width: 30%;
+  height: 1em;
+  margin: 5px auto;
+  background-color: lightgrey;
+}
+
+.featured-articles .guides {
+  width: 15%;
+  height: 10%;
+  margin: 10px;
+  background-color: lightgray;
+}
+
+.featured-articles .list-title {
+  width: 80%;
+  height: 20%;
+  margin: 10px auto;
+  background-color: rgb(87, 87, 87);
+}
+
+.featured-articles .list {
+  width: 70%;
+  height: 70%;
+  margin: auto;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+/* FEATURED ARTICLES SECTION END. */
+
+.view-more {
+  display: flex;
+  width: 100%;
+  height: 10vw;
+}
+
+.view-more div {
+  margin: auto;
+  width: 40%;
+  height: 30%;
+  background-color: gray;
+}
+
+.mega-ad {
+  width: 100%;
+  height: 30vw;
+  padding: 1%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.mega-ad .pic {
+  width: 90%;
+  height: 40%;
+  margin: auto;
+  background-color: rgb(56, 56, 56);
+}
+
+.mega-ad-second {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.mega-ad-second .content .featured-text {
+  width: 20%;
+  height: 10%;
+  margin: 10px;
+  background-color: gray;
+}
+
+.mega-ad-second .content .title {
+  width: 40%;
+  height: 20%;
+  margin: 10px;
+  background-color: rgb(56, 56, 56);
+}
+
+.mega-ad-second .content .text {
+  width: 60%;
+  height: 40%;
+  margin: 10px;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+.mega-ad-second .content .button {
+  width: 30%;
+  height: 30%;
+  margin: 10px;
+  background: rgb(56, 56, 56);
+}
+
+.mega-ad-second .pic {
+  width: 40%;
+  height: 100%;
+  margin: 10px;
+  background-color: gray;
+}
+
+.people-section {
+  width: 100%;
+  height: 2000px;
+}
+
+.people-section article {
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 25%;
+  width: 50%;
+}
+
+.people-section .pic {
+  width: 20%;
+  height: 20%;
+  background-color: gray;
+  margin: 10px;
+}
+
+.people-section .content .author {
+  width: 70%;
+  height: 20%;
+  background-color: gray;
+  margin: 10px;
+}
+
+.people-section .content .title {
+  width: 60%;
+  height: 20%;
+  background-color: rgb(87, 87, 87);
+  margin: 10px;
+}
+
+.people-section .content .text {
+  width: 80%;
+  height: 60%;
+  margin: 10px;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+.people-section .person-of-the-week {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.people-section .person-of-the-week .pic-container {
+  width: 25%;
+  height: 71%;
+  margin: auto 10px;
+  background-color: darkgray;
+}
+
+.people-section .person-of-the-week .content {
+  width: 75%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.person-of-the-week .content .title {
+  width: 25%;
+  height: 20%;
+  background-color: lightgray;
+}
+
+.person-of-the-week .content .text {
+  width: 85%;
+  height: 60%;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 600px;
+  width: 100%;
+}
+
+footer .links {
+  width: 70%;
+  height: 30%;
+  margin: 10px auto;
+  background:
+    repeating-linear-gradient(
+      to bottom,
+      darkgray,
+      darkgray 1em,
+      white 1em,
+      white 2em
+    );
+}
+
+footer .commentary {
+  width: 30%;
+  height: 20%;
+  margin: 10px auto;
+  background-color: rgb(220, 220, 220);
+}
+
+footer .content .bird-cage {
+  width: 20%;
+  margin: 10px;
+  background-color: lightgray;
+}
+
+footer .content .links {
+  width: 60%;
+  height: 80%;
+  margin: auto 10px;
+  background-color: lightgray;
+}
+
+footer .content .cat {
+  width: 20%;
+  margin: 10px;
+  background-color: lightgray;
+}
