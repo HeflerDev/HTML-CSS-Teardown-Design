@@ -90,9 +90,64 @@ section {
 
 .latest-articles article {
   width: 50%;
-  height: 400px;
-  background-color: lightgrey;
+  background-color: white;
   border: 1px solid darkgray;
+  padding: 30px;
+}
+
+.author-img {
+  background-color: lightgrey;
+  width: 85px;
+  height: 85px;
+  margin-top: 40px;
+  float: left;
+}
+
+.author {
+  background-color: darkgray;
+  height: 1.5em;
+  width: 170px;
+  display: inline-block;
+  position: relative;
+  top: 70px;
+}
+
+.multiline-title {
+  clear: left;
+}
+
+.multiline-title > * {
+  background-color: black;
+  height: 2.5em;
+}
+
+.line1 {
+  width: 200px;
+}
+
+.line2 {
+  width: 150px;
+}
+
+.line3 {
+  width: 220px;
+}
+
+.line4 {
+  width: 100px;
+}
+
+.tags ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.tags ul li {
+  display: block;
+  width: 170px;
+  background-color: lightgrey;
+  height: 1em;
 }
 
 /* FEATURED ARTICLES SECTION START */
